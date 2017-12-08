@@ -3,12 +3,20 @@ export default class SickerList extends Component {
   state = {
     list: [
       {
-        name: "Red",
+        PatientName: "Red",
+        PatientId: "343342334",
+        StudyDate: "20171208",
+        Modality: "MR",
+        StudyDescription: "CHEST",
         data:
           "http://www.ikea.com/gb/en/images/products/myttinge-picture-love__0455526_pe603579_s5.jpg"
       },
       {
-        name: "Green",
+        PatientName: "Green",
+        PatientId: "1343444342334",
+        StudyDate: "20171200ww",
+        Modality: "MR2",
+        StudyDescription: "CHssEST",
         data: "http://xxx"
       }
     ]
@@ -31,8 +39,11 @@ export default class SickerList extends Component {
           {this.state.list.map(item => {
             return (
               <li>
-                <h2>{item.name}</h2>
-                <img width={200} height={200} src={item.data} />
+                <h2>{item.PatientName}</h2>
+                <h2>{item.PatientId}</h2>
+                <h2>{item.StudyDate}</h2>
+                <h2>{item.Modality}</h2>
+                <h2>{item.StudyDescription}</h2>
               </li>
             );
           })}
