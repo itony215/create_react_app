@@ -3,27 +3,53 @@ import DataTables from "material-ui-datatables";
 import Detail from "./Detail";
 const TABLE_COLUMNS = [
   {
-    key: "name",
-    label: "Dessert (100g serving)"
+    key: "pid",
+    label: "Patient Id"
   },
   {
-    key: "calories",
-    label: "Calories"
+    key: "name",
+    label: "Patient Name"
+  },
+  {
+    key: "date",
+    label: "Study Date"
+  },
+  {
+    key: "modality",
+    label: "Modality"
+  },
+  {
+    key: "description",
+    label: "Study Description"
   }
 ];
 
 const TABLE_DATA = [
   {
-    name: "Frozen yogurt",
-    calories: "159",
-    fat: "6.0",
-    carbs: "24"
+    pid: "1343444342334",
+    name: "Kevin",
+    date: "20171216",
+    modality: "MR",
+    description: "CHEST",
+    data: "http://xxx",
+    dcmFileUrl:
+      "https://raw.githubusercontent.com/cornerstonejs/cornerstoneWADOImageLoader/master/testImages/CT0012.fragmented_no_bot_jpeg_baseline.51.dcm"
   },
   {
-    name: "Ice cream sandwich",
-    calories: "159",
-    fat: "6.0",
-    carbs: "24"
+    pid: "443444342334",
+    name: "Float",
+    date: "20171204",
+    modality: "CT",
+    description: "CHEST",
+    data: "http://xXXXxx"
+  },
+  {
+    pid: "91343342334",
+    name: "Rob",
+    date: "20171206",
+    modality: "DX",
+    description: "BRAIN",
+    data: "http://xxXx"
   }
 ];
 

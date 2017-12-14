@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "cornerstone-core": "^2.0.0",
+    "cornerstone-wado-image-loader": "^2.0.0",
+    "dicom-parser": "^1.7.6",
+    "fetch": "^1.1.0",
     "material-ui": "^0.20.0",
     "material-ui-datatables": "^0.18.2",
     "react": "^16.2.0",
